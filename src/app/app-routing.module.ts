@@ -5,8 +5,8 @@ import { ContentListComponent } from './content-list/content-list.component';
 import { GachaListComponent } from './gacha-list/gacha-list.component';
 
 const routes: Routes = [
-  { path: 'menu', component: MenuComponent },
   { path: 'content', component: ContentListComponent },
+  { path: 'menu', component: MenuComponent },
   { path: 'gacha-list', component: GachaListComponent},
 ];
 
