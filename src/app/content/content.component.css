@@ -1,9 +1,37 @@
-.ccard {
+.cbutton {
+    padding: 0px;
+    margin: 2px;
     width: 300px;
     height: 300px;
 }
 
-.image {
-    width: 298px;
+.ccards {
+    width: 300px;
+    height: 300px;
+}
+
+#content_picture {
     height: 250px;
+    overflow: hidden;
+}
+
+#content_info {
+    height: 50px;
+}
+
+#content_avatar {
+    background-size: cover;
+    float: left;
+    margin-right: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#mpic {
+    margin: 0px;
+    padding: 0px;
+}
+
+#mwindow {
+    padding: 0px;
 }

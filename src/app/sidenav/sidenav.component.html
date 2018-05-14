@@ -4,7 +4,7 @@
     class="sidenav"
     fixedInViewport="true"
     [attr.role]="isHandset ? 'dialog' : 'navigation'"
-    mode="push"
+    mode="side"
     [opened]="!(isHandset | async)!.matches">
     <mat-toolbar color="f26d5b">Menu</mat-toolbar>
     <mat-nav-list>
@@ -19,16 +19,10 @@
       <button mat-button
         type="button"
         aria-label="Toggle sidenav"
-        (click)="drawer.toggle()"
-        *ngIf="(isHandset | async)!.matches">
+        (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-        あいうえお
       </button>
-      <span>Application Title</span>
-      <div>
-        <div mat-card-avatar></div>
-        <mat-card-title>{{ user_name }}</mat-card-title>
-      </div>
+      <span>HirocomGacha</span>
     </mat-toolbar>
   </mat-sidenav-content>
 </mat-sidenav-container>
