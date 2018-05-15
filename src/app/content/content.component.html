@@ -1,9 +1,9 @@
-<button mat-button id="cbutton">
-  <mat-card id="ccard">
-    <img mat-card-image id="image" [src]="image_url">
-    <div>
-      <div mat-card-avatar></div>
-      <mat-card-title>{{ title }}</mat-card-title>
+<button mat-button id="content_button">
+  <mat-card id="content_frame">
+    <img mat-card-image src="{{ ppath + cont.id + jpg }}" id="content_picture">
+    <div id="content_info">
+      <div mat-card-avatar id="content_avatar" [style.background-image]="prefix + cont.rank + suffix"></div>
+      <mat-card-title id="content_title">{{ cont.name }}</mat-card-title>
     </div>
   </mat-card>
 </button>

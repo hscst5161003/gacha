@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Content } from '../content';
 
 @Component({
   selector: 'app-content',
@@ -7,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-  image_url = '';
-  title = '';
+  @Input() cont: Content;
+  ppath = '/assets/picture/';
+  jpg = '.jpg';
+  prefix = 'url(\'/assets/rank/';
+  suffix = '.png\')';
+
+  closeResult: string;
 
   constructor() { }
 

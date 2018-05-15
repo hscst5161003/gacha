@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule, MatButtonModule, MatToolbarModule, MatSidenavModule,
-         MatIconModule, MatListModule, MatTabsModule } from '@angular/material';
+         MatIconModule, MatListModule, MatTabsModule, MatGridListModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
@@ -34,6 +34,7 @@ import { GachaListComponent } from './gacha-list/gacha-list.component';
     MatIconModule,
     MatListModule,
     MatTabsModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,8 @@
-<p>
-  content-list works!
-</p>
-<app-content></app-content>
+<mat-grid-list cols=3 rowHeight="1:1" id="mgid">
+  <mat-grid-tile *ngFor="let content of contents">
+    <app-content
+      [cont] = "content">
+      root here ...
+    </app-content>
+  </mat-grid-tile>
+</mat-grid-list>

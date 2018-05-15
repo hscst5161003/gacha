@@ -1,11 +1,11 @@
-.cbutton {
+#content_button {
     padding: 0px;
     margin: 2px;
     width: 300px;
     height: 300px;
 }
 
-.ccards {
+#content_frame {
     width: 300px;
     height: 300px;
 }

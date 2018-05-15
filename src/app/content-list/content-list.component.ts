@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { CONTENTS } from '../mock-contents';
 
 @Component({
   selector: 'app-content-list',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content-list.component.css']
 })
 export class ContentListComponent implements OnInit {
+
+  contents = CONTENTS;
 
   constructor() { }
 
