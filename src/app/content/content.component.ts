@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Content } from '../content';
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material';
 
 @Component({
   selector: 'app-content',

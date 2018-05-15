@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule, MatButtonModule, MatToolbarModule, MatSidenavModule,
-         MatIconModule, MatListModule, MatTabsModule, MatGridListModule } from '@angular/material';
+         MatIconModule, MatListModule, MatTabsModule, MatGridListModule,
+         MatDialogModule, } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
@@ -12,6 +13,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { ContentListComponent } from './content-list/content-list.component';
 import { GachaListComponent } from './gacha-list/gacha-list.component';
+import { ContentDialogComponent } from './content-dialog/content-dialog.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { GachaListComponent } from './gacha-list/gacha-list.component';
     SidenavComponent,
     ContentListComponent,
     GachaListComponent,
+    ContentDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ import { GachaListComponent } from './gacha-list/gacha-list.component';
     MatListModule,
     MatTabsModule,
     MatGridListModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
