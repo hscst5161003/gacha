@@ -8,6 +8,8 @@ import { CONTENTS } from '../mock-contents';
 })
 export class ContentListComponent implements OnInit {
 
+  cols = 3;
+
   contents = CONTENTS;
 
   constructor() { }

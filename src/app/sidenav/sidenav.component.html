@@ -1,28 +1,21 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav
-    #drawer
-    class="sidenav"
-    fixedInViewport="true"
-    [attr.role]="isHandset ? 'dialog' : 'navigation'"
-    mode="side"
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="isHandset ? 'dialog' : 'navigation'" mode="side"
     [opened]="!(isHandset | async)!.matches">
-    <mat-toolbar color="f26d5b">Menu</mat-toolbar>
-    <mat-nav-list>
-      <a mat-list-item routerLink="/menu">メニュー</a>
-      <a mat-list-item routerLink="/gacha-list">ガチャ一覧</a>
-      <a mat-list-item routerLink="/content">コンテンツ一覧</a>
-      <a mat-list-item>ログアウト</a>
+    <mat-toolbar  id="mtheader" class="ml-item">Menu</mat-toolbar>
+    <hr class="line">
+    <mat-nav-list class="nav-list">
+      <a mat-list-item class="ml-item" routerLink="/menu">メニュー</a>
+      <a mat-list-item class="ml-item" routerLink="/gacha-list">ガチャ一覧</a>
+      <a mat-list-item class="ml-item" routerLink="/content">コンテンツ一覧</a>
+      <a mat-list-item class="ml-item">ログアウト</a>
     </mat-nav-list>
   </mat-sidenav>
-  <mat-sidenav-content>
-    <mat-toolbar color="f26d5b">
-      <button mat-button
-        type="button"
-        aria-label="Toggle sidenav"
-        (click)="drawer.toggle()">
+  <mat-sidenav-content class="ms-content">
+    <mat-toolbar id="msheader">
+      <button mat-button type="button" aria-label="Toggle sidenav" (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>HirocomGacha</span>
+      <span id="top-link" routerLink="/menu">HirocomGacha</span>
     </mat-toolbar>
   </mat-sidenav-content>
 </mat-sidenav-container>

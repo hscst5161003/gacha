@@ -1,9 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule, MatButtonModule, MatToolbarModule, MatSidenavModule,
-         MatIconModule, MatListModule, MatTabsModule, MatGridListModule,
-         MatDialogModule, } from '@angular/material';
+import {
+  MatCardModule, MatButtonModule, MatToolbarModule, MatSidenavModule,
+  MatIconModule, MatListModule, MatTabsModule, MatGridListModule,
+  MatDialogModule,
+} from '@angular/material';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
@@ -30,6 +33,7 @@ import { ContentDialogComponent } from './content-dialog/content-dialog.componen
     BrowserAnimationsModule,
     AppRoutingModule,
     LayoutModule,
+    HttpClientInMemoryWebApiModule,
     MatCardModule,
     MatToolbarModule,
     MatButtonModule,

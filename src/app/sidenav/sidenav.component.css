@@ -2,9 +2,46 @@
   height: 100%;
   padding: 0%;
   margin: 0%;
+  background: rgba(0,0,0,0);
 }
 
 .sidenav {
   width: 200px;
   box-shadow: 3px 0 6px rgba(0,0,0,.24);
+  background: rgba(0,0,0,0.2);
+}
+
+.line {                              /* hrタグに付ける（最大3ライン対応の水平罫線） */
+  display:block;
+  border:none;                     /* 左右のボーダーを消すために必要 */
+  margin:0;
+  padding:0;
+  height:1px;                      /* 上線px＋中線px＋下線px＝高さpx */
+  border-top:solid 1px rgba(0,0,0,0.2);       /* 上線の色、pxを指定 */
+  background:none;                 /* 中線の色を指定 */
+  border-bottom:none;              /* 下線の色、pxを指定 */
+}
+
+.mtbar {
+  background: rgba(0,0,0,0.2);
+}
+
+.ms-content {
+  background: rgba(0,0,0,0);
+}
+
+#mtheader {
+  background: rgba(0,0,0,0);
+}
+
+#msheader {
+  background: rgba(0,0,0,0.2);
+}
+
+.ml-item {
+  color: rgba(255,255,255,1)
+}
+
+#top-link {
+  cursor: pointer;
 }
