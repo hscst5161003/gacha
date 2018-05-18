@@ -6,7 +6,6 @@ import {
   MatIconModule, MatListModule, MatTabsModule, MatGridListModule,
   MatDialogModule,
 } from '@angular/material';
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { AppComponent } from './app.component';
 import { ContentComponent } from './content/content.component';
@@ -33,7 +32,6 @@ import { ContentDialogComponent } from './content-dialog/content-dialog.componen
     BrowserAnimationsModule,
     AppRoutingModule,
     LayoutModule,
-    HttpClientInMemoryWebApiModule,
     MatCardModule,
     MatToolbarModule,
     MatButtonModule,
